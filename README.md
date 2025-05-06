@@ -6,9 +6,9 @@
 
 ## Integrantes del Grupo
 - Agustín Pistiner
+- Franco Mendez
 - Ayrton Spinosi
 - Mauricio Vidal
-- Franco Nobuo
 - Matías Beratz
 
 ## Explicacion general
