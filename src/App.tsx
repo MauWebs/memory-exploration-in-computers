@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import Aside from "./sections/Aside";
 
 const App = () => {
-  const [activeSection, setActiveSection] = useState("introduction");
+  const [, setActiveSection] = useState("introduction");
   const sectionRefs = {
     introduction: useRef<HTMLElement>(null),
     authentication: useRef<HTMLElement>(null),
