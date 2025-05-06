@@ -5,3 +5,13 @@
   background-color: #F8FAFC;
   font-family: 'Inter';
 }
+
+body, * {
+  scrollbar-width: none;      
+  -ms-overflow-style: none;    
+}
+
+body::-webkit-scrollbar, 
+*::-webkit-scrollbar {
+  display: none;           
+}

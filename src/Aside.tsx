@@ -1,5 +1,5 @@
-import { useState, useRef } from "react";
 import { MonitorSmartphone, Book, MemoryStick, MonitorCog, TrendingUp, TextSearch } from "lucide-react";
+import { useState, useRef } from "react";
 
 export default function Aside() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -124,6 +124,14 @@ export default function Aside() {
                                         className={`text-sm block transition-colors ${activeSection === 'users' ? 'text-[#3a4fff] font-medium' : 'text-gray-600 hover:text-[#3a4fff]'}`}
                                     >
                                         Memoria RAM
+                                    </a>
+                                </li>           <li>
+                                    <a
+                                        href="#users"
+                                        onClick={() => handleNavClick('users')}
+                                        className={`text-sm block transition-colors ${activeSection === 'users' ? 'text-[#3a4fff] font-medium' : 'text-gray-600 hover:text-[#3a4fff]'}`}
+                                    >
+                                        Comparativa
                                     </a>
                                 </li>
                             </ul>

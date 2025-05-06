@@ -1,5 +1,6 @@
+import MemorySectionComparative from "./sections/MemorySectionComparative";
 import { useState, useRef, useEffect } from "react";
-import Aside from "./sections/Aside";
+import Aside from "./Aside";
 
 const App = () => {
   const [, setActiveSection] = useState("introduction");
@@ -61,7 +62,7 @@ const App = () => {
                   </svg>
                 </div>
                 <div className="ml-3">
-                  <h3 className="text-sm font-medium">Dato útil</h3>
+                  <h3 className="text-sm font-medium text-blue-700"> <strong>Dato útil</strong></h3>
                   <div className="mt-2 text-sm text-blue-700">
                     <p>La <strong>RAM</strong> es clave para el rendimiento: a mayor cantidad y velocidad, <strong>más fluida</strong> será la ejecución de programas y juegos.</p>
                   </div>
@@ -90,7 +91,7 @@ const App = () => {
                   </svg>
                 </div>
                 <div className="ml-3">
-                  <h3 className="text-sm font-medium text-yellow-800">Importante</h3>
+                  <h3 className="text-sm font-medium text-yellow-800"><strong>Importante</strong></h3>
                   <div className="mt-2 text-sm text-yellow-700">
                     <p>Si tu <strong>PC</strong> se queda <strong>sin RAM</strong>, empezará a usar el disco como memoria virtual, lo que puede hacer que todo funcione <strong>mucho más lento</strong>.</p>
                   </div>
@@ -98,12 +99,7 @@ const App = () => {
               </div>
             </div>
           </section>
-
-
-
-
-
-
+          <MemorySectionComparative />
         </div>
       </main>
     </div>
