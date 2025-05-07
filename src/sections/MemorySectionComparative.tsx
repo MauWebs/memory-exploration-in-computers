@@ -7,8 +7,9 @@ import {
     ResponsiveContainer,
     Legend,
 } from "recharts";
-import { useState, useEffect } from "react";
 import MemoryModal from "./MemoryModal";
+import { useState, useEffect } from "react";
+import RankedMemoriesTable from "./RankedMemoriesTable";
 
 export default function MemorySectionComparative() {
     const [memories, setMemories] = useState<any[]>([]);
@@ -25,7 +26,7 @@ export default function MemorySectionComparative() {
     }, []);
 
     return (
-        <section className="mb-10 bg-white border border-gray-200 p-6 rounded-xl">
+        <section className="mb-10 bg-white border border-gray-200 p-6 rounded">
             <MemoryModal
                 isOpen={isModalOpen}
                 setIsOpen={setIsModalOpen}
@@ -49,8 +50,8 @@ export default function MemorySectionComparative() {
 
             <article>
                 {memories.length === 0 ? (
-                    <p className="text-gray-600 text-center">
-                        Añade memorias para poder compararlas
+                    <p className="text-gray-600 text-center text-[14.3px]">
+                        Añade memorias para poder compararlas entre sí
                         <br />
                         dirígete a la parte de{" "}
                         <span
@@ -71,17 +72,19 @@ export default function MemorySectionComparative() {
                             >
                                 <XAxis dataKey="type" />
                                 <YAxis />
-                                <Tooltip />
+                                <Tooltip/>
                                 <Legend />
-                                <Bar dataKey="speedMHz" fill="#8884d8" name="Velocidad (MHz)" />
-                                <Bar dataKey="bandwidthGBs" fill="#82ca9d" name="Ancho de banda (GB/s)" />
+                                <Bar dataKey="price" fill="#82ca9d" name="Precio (ARG)" />
                                 <Bar dataKey="latencyCL" fill="#ff7300" name="Latencia (CL)" />
+                                <Bar dataKey="speedMHz" fill="#8884d8" name="Velocidad (MHz)" />
+                                <Bar dataKey="bandwidthGBs" fill="#6495ed" name="Ancho de banda (GB/s)" />
                             </BarChart>
                         </ResponsiveContainer>
+                        <hr className="border-t border-gray-200 my-5 -mx-6" />
+                        <RankedMemoriesTable memories={memories} />
                     </>
                 )}
             </article>
-
         </section>
     );
 };

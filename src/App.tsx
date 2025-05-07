@@ -54,7 +54,7 @@ const App = () => {
               Existen varios tipos de memoria: la <strong>RAM</strong> (memoria de acceso aleatorio), que es volátil y se borra al apagar el equipo; y la <strong>ROM</strong> (memoria de solo lectura), que contiene instrucciones fundamentales del sistema.
               También se incluyen unidades de almacenamiento como los discos duros (HDD/SSD), que conservan la información incluso cuando el sistema está apagado.
             </p>
-            <div className="bg-blue-50 border-l-4 border-[#3a4fff] p-4 rounded-r-md mb-6">
+            <div className="bg-blue-50 border-l-4 border-[#3a4fff] p-4 rounded mb-6">
               <div className="flex">
                 <div className="flex-shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#3a4fff]" viewBox="0 0 20 20" fill="currentColor">
@@ -83,7 +83,7 @@ const App = () => {
               Cuando abres una aplicación, esta se carga desde el disco a la <strong>RAM</strong>, donde se ejecuta. Si la memoria disponible es insuficiente, el sistema puede volverse lento
               o incluso colapsar. Por eso, es importante contar con una cantidad adecuada de memoria para el uso que le des a tu computadora.
             </p>
-            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-md mb-6">
+            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded mb-6">
               <div className="flex">
                 <div className="flex-shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">

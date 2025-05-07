@@ -12,7 +12,6 @@
 - Matías Beratz
 
 ## Explicacion general
-
 Este proyecto presenta un análisis sobre los distintos tipos de memoria en computadoras, explorando su funcionamiento, características y el papel clave que desempeñan en el rendimiento del sistema. Se abordan conceptos fundamentales como la memoria RAM, ROM, caché y virtual, explicando sus diferencias y usos dentro de la arquitectura de un equipo. Además, se examinan factores como la velocidad, latencia y ancho de banda, que influyen directamente en la eficiencia de procesamiento.
 
 A lo largo del desarrollo del proyecto, también se analizarán las tendencias tecnológicas actuales y futuras en el ámbito de la memoria, destacando avances que pueden impactar la evolución de los sistemas informáticos.
