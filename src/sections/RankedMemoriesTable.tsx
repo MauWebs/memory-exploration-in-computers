@@ -21,7 +21,7 @@ export default function RankedMemoriesTable({ memories }: { memories: Memory[] }
     return (
         <div className="mt-8">
             <h3 className="text-lg font-medium mb-4">Ranking rendimiento / precio</h3>
-            <div className="overflow-auto rounded border border-gray-200">
+            <div className="overflow-auto rounded-[5px] border border-gray-200">
                 <table className="min-w-full text-sm text-left">
                     <thead className="bg-gray-100 text-gray-700 font-semibold">
                         <tr>

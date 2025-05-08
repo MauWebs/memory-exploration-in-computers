@@ -26,7 +26,7 @@ export default function MemorySectionComparative() {
     }, []);
 
     return (
-        <section className="mb-10 bg-white border border-gray-200 p-6 rounded">
+        <section className="mb-10 bg-white border border-gray-200 p-6 rounded-[5px]">
             <MemoryModal
                 isOpen={isModalOpen}
                 setIsOpen={setIsModalOpen}
@@ -39,7 +39,7 @@ export default function MemorySectionComparative() {
                     <h2 className="text-xl font-semibold">Comparativas</h2>
                     <button
                         onClick={() => setIsModalOpen(true)}
-                        className="bg-blue-600 text-white px-4 py-2 rounded cursor-pointer"
+                        className="bg-blue-600 text-white px-4 py-2 rounded-[5px] cursor-pointer"
                     >
                         Ver lista
                     </button>
