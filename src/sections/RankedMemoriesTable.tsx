@@ -8,11 +8,15 @@ type Memory = {
 
 export default function RankedMemoriesTable({ memories }: { memories: Memory[] }) {
     const ranked = [...memories]
-        .map((m) => ({
-            ...m,
-            score: ((m.speedMHz + m.bandwidthGBs * 100) / m.latencyCL) / m.price,
-        }))
-        .sort((a, b) => b.score - a.score);
+        .map((m) => {
+            const rawScore = ((m.speedMHz + m.bandwidthGBs * 100) / m.latencyCL) / m.price * 100;
+            return {
+                ...m,
+                rawScore,
+                score: Math.min(rawScore, 100),
+            };
+        })
+        .sort((a, b) => b.rawScore - a.rawScore);
 
     return (
         <div className="mt-8">
@@ -48,7 +52,9 @@ export default function RankedMemoriesTable({ memories }: { memories: Memory[] }
                                 <td className="px-4 py-2">{m.speedMHz.toLocaleString("es-AR")}</td>
                                 <td className="px-4 py-2">{m.bandwidthGBs.toLocaleString("es-AR")}</td>
                                 <td className="px-4 py-2">{m.latencyCL.toLocaleString("es-AR")}</td>
-                                <td className="px-4 py-2 text-green-600 font-medium">{m.score.toFixed(2)}</td>
+                                <td className="px-4 py-2 text-green-600 font-medium">
+                                    {Number.isInteger(m.score) ? `${m.score}%` : `${m.score.toFixed(2)}%`}
+                                </td>
                             </tr>
                         ))}
                     </tbody>

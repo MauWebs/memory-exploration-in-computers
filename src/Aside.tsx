@@ -92,42 +92,42 @@ export default function Aside() {
                             <ul className="space-y-2">
                                 <li>
                                     <a
-                                        href="#payments"
-                                        onClick={() => handleNavClick('payments')}
-                                        className={`text-sm block transition-colors ${activeSection === 'payments' ? 'text-[#3a4fff] font-medium' : 'text-gray-600 hover:text-[#3a4fff]'}`}
+                                        href="#memoriaRAM"
+                                        onClick={() => handleNavClick('memoriaRAM')}
+                                        className={`text-sm block transition-colors ${activeSection === 'memoriaRAM' ? 'text-[#3a4fff] font-medium' : 'text-gray-600 hover:text-[#3a4fff]'}`}
                                     >
-                                        Memoria Virtual
+                                        Memoria RAM
                                     </a>
                                 </li>
                                 <li>
                                     <a
-                                        href="#orders"
-                                        onClick={() => handleNavClick('orders')}
-                                        className={`text-sm block transition-colors ${activeSection === 'orders' ? 'text-[#3a4fff] font-medium' : 'text-gray-600 hover:text-[#3a4fff]'}`}
-                                    >
-                                        Memoria Caché
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#products"
-                                        onClick={() => handleNavClick('products')}
-                                        className={`text-sm block transition-colors ${activeSection === 'products' ? 'text-[#3a4fff] font-medium' : 'text-gray-600 hover:text-[#3a4fff]'}`}
+                                        href="#memoriaROM"
+                                        onClick={() => handleNavClick('memoriaROM')}
+                                        className={`text-sm block transition-colors ${activeSection === 'memoriaROM' ? 'text-[#3a4fff] font-medium' : 'text-gray-600 hover:text-[#3a4fff]'}`}
                                     >
                                         Memoria ROM
                                     </a>
                                 </li>
                                 <li>
                                     <a
-                                        href="#users"
-                                        onClick={() => handleNavClick('users')}
-                                        className={`text-sm block transition-colors ${activeSection === 'users' ? 'text-[#3a4fff] font-medium' : 'text-gray-600 hover:text-[#3a4fff]'}`}
+                                        href="#memoriaCache"
+                                        onClick={() => handleNavClick('memoriaCache')}
+                                        className={`text-sm block transition-colors ${activeSection === 'memoriaCache' ? 'text-[#3a4fff] font-medium' : 'text-gray-600 hover:text-[#3a4fff]'}`}
                                     >
-                                        Memoria RAM
+                                        Memoria Caché
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#memoriaVirtual"
+                                        onClick={() => handleNavClick('memoriaVirtual')}
+                                        className={`text-sm block transition-colors ${activeSection === 'memoriaVirtual' ? 'text-[#3a4fff] font-medium' : 'text-gray-600 hover:text-[#3a4fff]'}`}
+                                    >
+                                        Memoria Virtual
                                     </a>
                                 </li>           <li>
                                     <a
-                                        href="#users"
+                                        href="#Comparativa"
                                         onClick={() => handleNavClick('users')}
                                         className={`text-sm block transition-colors ${activeSection === 'users' ? 'text-[#3a4fff] font-medium' : 'text-gray-600 hover:text-[#3a4fff]'}`}
                                     >
