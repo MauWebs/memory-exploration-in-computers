@@ -255,7 +255,7 @@ const App = () => {
             </p>
             <h3 className="text-x font-semibold mb-4">Jerarquía</h3>
             <p className="text-gray-700 mb-6">
-              La memoria caché tiene un sistema de jerarquía (L1, L2 y L3) que se ordena de acuerdo a la velocidad y a la cantidad de información situada dentro de cada núcleo, siendo L1 la más veloz, pero la que contiene menos información y L3 la más lenta pero con una mayor cantidad de información.
+              La memoria caché tiene un sistema de jerarquía (L1, L2 y L3) que se ordena de acuerdo a la velocidad y a la cantidad de información situada dentro de cada núcleo, siendo L1 la más veloz, pero la que contiene menos información (1MB o menos), L2 la opción intermedia en capacidad/velocidad (entre 256KB y 18MB) y L3 la más lenta pero con una mayor cantidad de información (hasta 64MB).
             </p>
             <h3 className="text-x font-semibold mb-4">Principios de localidad</h3>
             <p className="text-gray-700 mb-6">
@@ -276,26 +276,45 @@ const App = () => {
             <p className="text-gray-700 mb-6">
               Direcciones virtuales vs. físicas
               Cada programa trabaja con direcciones “virtuales”.
-              Un componente del procesador (la MMU) traduce esas direcciones a “físicas” (la RAM real) mediante tablas de páginas. Paginación y swap
-              La memoria se divide en bloques fijos llamados páginas (por ejemplo, 4 KB).
-              Cuando la RAM está llena, páginas poco usadas se escriben (“swappean”) a un archivo o partición de intercambio en disco.
+              Un componente del procesador (la MMU) traduce esas direcciones a “físicas” (la RAM real) mediante tablas de páginas. Paginación y swap La memoria se divide en bloques fijos llamados páginas (por ejemplo, 4 KB).
+              Cuando la RAM está llena, páginas poco usadas se escriben (o “swappean”) a un archivo o partición de intercambio en disco.
               Si un proceso pide una página que está en disco, se produce una “falla de página”: el SO la trae de vuelta a RAM, expulsando otra si es necesario.
-              Ventajas
-              Aislamiento: cada proceso cree tener su propio espacio, mejora estabilidad y seguridad.
-              Multitarea: permite ejecutar más programas de los que cabrían físicamente en RAM.
-              Flexibilidad: el SO gestiona dinámicamente qué permanece en RAM y qué va al disco según necesidad.
+              <br /><br />
+              <strong>Sus ventajas incluyen:</strong>
+              <br /><br />
+              <strong>Aislamiento:</strong> cada proceso cree tener su propio espacio, mejora estabilidad y seguridad.
+              <br />
+              <strong>Multitarea:</strong> permite ejecutar más programas de los que cabrían físicamente en RAM.
+              <br />
+              <strong>Flexibilidad:</strong> el SO gestiona dinámicamente qué permanece en RAM y qué va al disco según necesidad.
               En esencia, la memoria virtual abstrae y amplía la memoria física, mezclando RAM y disco para optimizar el uso de recursos y facilitar la ejecución concurrente de múltiples procesos.
+              <br /><br />
+              <strong>Mientras que algunas de sus desventajas son:</strong>
+              <br /><br />
+              <strong>Mayor latencia:</strong> acceder al disco (swap) es miles de veces más lento que a la RAM.
+              <br />
+              <strong>Fragmentación:</strong> aunque está gestionada por el sistema, puede causar ineficiencias al distribuir datos dispersos.
+              <br />
+              <strong>Mayor uso del CPU:</strong> la traducción constante entre memoria virtual y física requiere ciclos adicionales y gestión de tablas de páginas.
 
             </p>
           </section>
-
+          <div id="Comparativa"></div>
           <MemorySectionComparative />
 
-          <hr className="border-t border-gray-200 my-5" />
-          
+
+
+          <hr id="GDDR7" className="border-t border-gray-200 my-5" />
+
+
+
           <MemoryTrends />
 
           <hr className="border-t border-gray-200 my-5" />
+
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/JnDncNR58YQ?si=BEHgrJlLCFx86lq1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+
+
 
           <MemoryQuiz />
 

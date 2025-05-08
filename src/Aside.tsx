@@ -183,29 +183,29 @@ export default function Aside() {
                             <ul className="space-y-2">
                                 <li>
                                     <a
-                                        href="#introduction"
+                                        href="#GDDR7"
                                         onClick={() => handleNavClick('introduction')}
                                         className={`text-sm block transition-colors ${activeSection === 'introduction' ? 'text-[#3a4fff] font-medium' : 'text-gray-600 hover:text-[#3a4fff]'}`}
                                     >
-                                        Lorem Ipsum is simply
+                                        Memoria GDDR7
                                     </a>
                                 </li>
                                 <li>
                                     <a
-                                        href="#authentication"
+                                        href="#GDDR7"
                                         onClick={() => handleNavClick('authentication')}
                                         className={`text-sm block transition-colors ${activeSection === 'authentication' ? 'text-[#3a4fff] font-medium' : 'text-gray-600 hover:text-[#3a4fff]'}`}
                                     >
-                                        Lorem Ipsum is sim
+                                        Cristal de Memoria 5D
                                     </a>
                                 </li>
                                 <li>
                                     <a
-                                        href="#errors"
+                                        href="#GDDR7"
                                         onClick={() => handleNavClick('errors')}
                                         className={`text-sm block transition-colors ${activeSection === 'errors' ? 'text-[#3a4fff] font-medium' : 'text-gray-600 hover:text-[#3a4fff]'}`}
                                     >
-                                        Lorem Ipsum
+                                        Memoria HBM3E
                                     </a>
                                 </li>
                             </ul>
