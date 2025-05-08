@@ -10,9 +10,10 @@ import {
 import MemoryModal from "./MemoryModal";
 import { useState, useEffect } from "react";
 import RankedMemoriesTable from "./RankedMemoriesTable";
+import { Memory } from "./RankedMemoriesTable";
 
 export default function MemorySectionComparative() {
-    const [memories, setMemories] = useState<any[]>([]);
+    const [memories, setMemories] = useState<Memory[]>([]);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
@@ -51,9 +52,8 @@ export default function MemorySectionComparative() {
             <article>
                 {memories.length === 0 ? (
                     <p className="text-gray-600 text-center text-[14.3px]">
-                        Añade memorias para poder compararlas entre sí
-                        <br />
-                        dirígete a la parte de{" "}
+                        Añade memorias para poder compararlas entre sí <br />
+                        dirígete a{" "}
                         <span
                             onClick={() => setIsModalOpen(true)}
                             className="text-blue-600 font-semibold cursor-pointer underline underline-offset-4"
@@ -72,7 +72,7 @@ export default function MemorySectionComparative() {
                             >
                                 <XAxis dataKey="type" />
                                 <YAxis />
-                                <Tooltip/>
+                                <Tooltip />
                                 <Legend />
                                 <Bar dataKey="price" fill="#82ca9d" name="Precio (ARG)" />
                                 <Bar dataKey="latencyCL" fill="#ff7300" name="Latencia (CL)" />

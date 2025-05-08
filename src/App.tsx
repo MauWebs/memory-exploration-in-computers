@@ -1,7 +1,8 @@
 import MemorySectionComparative from "./sections/MemorySectionComparative";
 import { useState, useRef, useEffect } from "react";
-import Aside from "./Aside";
 import MemoryTrends from "./sections/MemoryTrends";
+import MemoryQuiz from "./sections/MemoryQuiz";
+import Aside from "./Aside";
 
 const App = () => {
   const [, setActiveSection] = useState("introduction");
@@ -293,6 +294,11 @@ const App = () => {
           <hr className="border-t border-gray-200 my-5" />
           
           <MemoryTrends />
+
+          <hr className="border-t border-gray-200 my-5" />
+
+          <MemoryQuiz />
+
         </div>
       </main>
     </div>

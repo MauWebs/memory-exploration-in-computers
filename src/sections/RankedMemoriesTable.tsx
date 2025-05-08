@@ -1,4 +1,4 @@
-type Memory = {
+export type Memory = {
     type: string;
     price: number;
     latencyCL: number;
