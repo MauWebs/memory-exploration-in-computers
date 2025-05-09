@@ -62,7 +62,7 @@ const App = () => {
           <hr className="border-t border-gray-200 my-5" />
 
           <section id="function" className="mb-10">
-            <h2 className="text-xl font-semibold mb-4">¿Cuál es su función?</h2>
+            <h2 className="text-xl font-semibold mb-4" id="función">¿Cuál es su función?</h2>
             <p className="text-gray-700 mb-6">
               La memoria permite que el sistema operativo, los programas y los datos en uso estén disponibles de forma inmediata para el procesador. Actúa como un espacio de trabajo temporal
               que influye directamente en la velocidad de respuesta del equipo.
@@ -299,23 +299,19 @@ const App = () => {
 
             </p>
           </section>
+
           <div id="Comparativa"></div>
           <MemorySectionComparative />
 
-
-
-          <hr id="GDDR7" className="border-t border-gray-200 my-5" />
-
-
-
+          <hr className="border-t border-gray-200 my-5" id="GDDR7"/>
           <MemoryTrends />
 
-          <hr className="border-t border-gray-200 my-5" />
 
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/JnDncNR58YQ?si=BEHgrJlLCFx86lq1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          <hr className="border-t border-gray-200 my-5" id="conclusion"/>
+          <h2 className="text-xl font-semibold mb-4">Conclusión</h2>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/JnDncNR58YQ?si=BEHgrJlLCFx86lq1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="mb-[25px] rounded-sm"></iframe>
 
-
-
+          <hr className="border-t border-gray-200 my-5" id="evaluacion" />
           <MemoryQuiz />
 
         </div>
